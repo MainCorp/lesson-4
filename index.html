@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
-    <title>Shower Presentation Engine</title>
+    <title>Урок 4 (Бонусный урок)</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
@@ -11,200 +12,4755 @@
         }
     </style>
 </head>
-<body class="shower list">
 
+<body class="shower list">
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Урок 4</h1>
+        <p>(Разбор страниц, бонусы, ответы на вопросы)</p>
     </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+    <section class="slide" id="promo">
+        <h2>Бонусный урок!</h2>
+        <p>Автор урока <a href="https://gethelpers.ru/professionals/ipopal" target="_blank">Иван Попаль</a></p>
         <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
+            <img class="cover cover__promo" src="pictures/cover.jpg">
         </figure>
         <style>
-            #cover h2 {
-                margin: 30px 0 0;
+            #promo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #promo h2 {
+                margin: 0 0 0;
                 color: white;
                 text-align: center;
                 font-size: 70px;
+                text-shadow: 0 0 20px black;
             }
-
-            #cover p {
+            
+            #promo p {
                 margin: 10px 0 0;
                 text-align: center;
                 color: white;
                 font-style: italic;
                 font-size: 20px;
+                text-shadow: 0 0 20px black;
             }
-
-            #cover p a {
+            
+            #promo p a {
                 color: white;
+            }
+            
+            #promo img.cover__promo {
+                filter: brightness(0.8);
             }
         </style>
     </section>
 
-    <section class="slide">
-        <h2>Shower key features</h2>
+    <section class="slide" id="plan">
+        <h2>План урока:</h2>
         <ol>
-            <li>Built on HTML, CSS and JavaScript</li>
-            <li>Works in all modern browsers</li>
-            <li>Themes are separated from engine</li>
-            <li>Fully keyboard accessible</li>
-            <li>Printable to PDF</li>
+            <li>Разбор страниц;</li>
+            <li class="next">Повторим прошедший материал;</li>
+            <li class="next">Покажу список типовых ошибок;</li>
+            <li class="next">Новые анимации;</li>
+            <li class="next">Рассмотрим разные фишки и скрипты;</li>
+            <li class="next">Отвечу на ваши вопросы.</li>
         </ol>
-        <p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
     </section>
 
-    <section class="slide">
-        <h2>Plain text on your slides</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-
-    <section class="slide">
-        <h2>Two columns if you like</h2>
-        <div class="columns two">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-        </div>
-    </section>
-
-    <section class="slide">
-        <h2>All kind of lists</h2>
+    <section class="slide" id="parsing-plan">
+        <h2>План разбора страницы:</h2>
         <ol>
-            <li>Simple lists are marked with bullets</li>
-            <li>Ordered lists begin with a number</li>
-            <li>You can even nest lists one inside another
+            <li>Рекомендации по Desctop;</li>
+            <li>Рекомендации по Mobile.</li>
+        </ol>
+    </section>
+
+    <section class="slide  site-link" id="site-link-1">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №1</b><br>
+            <a href="https://specialistjuli.getcourse.ru/about_kurs" target="_blank">specialistjuli.getcourse.ru/about_kurs</a>
+        </h2>
+
+        <h2 class="shout">Desctop</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-1--img-0">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/0.png">
+        </figure>
+
+        <style>
+            #site-link-1--img-0::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-1">
+        <h2>Маленький размер контактов в шапке.</h2>
+        <ol>
+            <li>Увеличить размер текста;</li>
+            <li class="next">Убедиться, что текст не вываливается, если вываливается за меню, то просто увеличиваем высоту меню;</li>
+            <li class="next">Также убедитесь, что есть отступы у текста сверху и снизу, если их уже не осталось, чуть-чуть можно увеличить размер меню.</li>
+        </ol>
+        <!-- <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p> -->
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-1--img-18">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/18.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-2">
+        <h2>Горизонтальная прокрутка при использовании библиотеки</h2>
+        <ol>
+            <li>Появилась при использовании класса появления блока с правой стороны;</li>
+            <li class="next">Данную проблему можно поправить, если вы отмените прокрутку у html, body.</li>
+        </ol>
+        <!-- <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p> -->
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-3">
+        <h2 class="shout">Слишком сильное затемнение обложки</h2>
+    </section>
+
+    <section class="slide" id="site-link-1--img-10">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/10.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-3-1">
+        <h2>Слишком сильное затемнение обложки</h2>
+        <ol>
+            <li>Иногда, это портит качество отображения вашей картинки;</li>
+            <li class="next">Если она яркая, то можно подобрать затемнение настолько, чтобы не сбивать контраст и цветовую палитру;</li>
+            <li class="next">Либо разделить логотип от фона.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-4">
+        <h2 class="shout">Не соблюдение единых отступов у блоков</h2>
+
+        <style>
+            .site-link--mistake .shout {
+                font-size: 85px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-1--img-11">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/11.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-1--img-12">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/12.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-4-1">
+        <h2>Не соблюдение единых отступов у блоков</h2>
+        <ol>
+            <li>Не нужно делать такие заборчики, ведь любому клиенту явно это будет бросаться в глаза;</li>
+            <li class="next">С опытом вы сможете делать это ещё аккуратнее.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-5">
+        <h2 class="shout">Добавление анимации из библиотеки на крупные блоки</h2>
+
+        <style>
+            .site-link--mistake .shout {
+                font-size: 85px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-1--img-13">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/13.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-5-1">
+        <h2>Как исправить отображение:</h2>
+        <ol>
+            <li>Лучше добавлять анимацию только на маленькие блоки;</li>
+            <li class="next">Либо скриптом пробросить анимацию в нужные элементы блока (приложу скрипт в доп. материалах).</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-6">
+        <h2 class="shout">Отображение картинки автора</h2>
+
+        <style>
+            .site-link--mistake .shout {
+                font-size: 85px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-1--img-14">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/14.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-6-1">
+        <h2>Как исправить отображение:</h2>
+        <ol>
+            <li>Лучше будет попросить клиента прислать хорошую картинку без таких срезов;</li>
+            <li class="next">Если таковой нет, то <i style="color: #999; text-decoration: line-through;">дорисуйте ноги</i> попробуйте поиграться с контейнером блока, можно добавить рамку и прикрепить картинку в самом низу.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link" id="site-link-1-1">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №1</b><br>
+            <a href="https://specialistjuli.getcourse.ru/about_kurs" target="_blank">specialistjuli.getcourse.ru/about_kurs</a>
+        </h2>
+
+        <h2 class="shout">Mobile</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-1--img-15">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/15.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-1-1">
+        <h2>Ошибки:</h2>
+        <ol>
+            <li>Очень мелкий текст в меню;</li>
+            <li class="next">Логотип выходит за края страницы. Для мобильной версии можно удалить обложку, добавить фон и логотип залить уже картинкой.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-1-2">
+        <h2 class="shout">Хаотичные отступы:</h2>
+    </section>
+
+    <section class="slide" id="site-link-1--img-16">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/16.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-1--img-17">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/17.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="mistakes-01">
+        <h2>Список ошибок:</h2>
+        <ol>
+            <li>Размер текста в меню;</li>
+            <li class="next">Горизонтальная прокрутка при использовании анимации;</li>
+            <li class="next">Контраст в обложке;</li>
+            <li class="next">Хаотичные отступы;</li>
+            <li class="next">Добавление анимации на крупные блоки.</li>
+        </ol>
+    </section>
+
+    <section class="slide  site-link" id="site-link-2">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №2</b><br>
+            <a href="https://maryget.ru/lp-webinar2" target="_blank">maryget.ru/lp-webinar2</a>
+        </h2>
+
+        <h2 class="shout">Desctop</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-2--img-1">
+        <figure>
+            <img class="cover cover__promo" src="pictures/2/1.png">
+        </figure>
+
+        <style>
+            #site-link-2--img-1::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-2--mistake-1">
+        <h2>Маленький размер контактов в шапке.</h2>
+        <ol>
+            <li>Увеличить размер текста;</li>
+            <li>Убедиться, что текст не вываливается, если вываливается за меню, то просто увеличиваем высоту меню;</li>
+            <li>Также убедитесь, что есть отступы у текста сверху и снизу, если их уже не осталось, чуть-чуть можно увеличить размер меню.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-2--mistake-2">
+        <h2 class="shout">Не соблюдение единых отступов у блоков</h2>
+
+        <style>
+            .site-link--mistake .shout {
+                font-size: 85px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-2--img-2">
+        <figure>
+            <img class="cover cover__promo" src="pictures/2/2.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-2--mistake-2-1">
+        <h2>Не соблюдение единых отступов у блоков</h2>
+        <ol>
+            <li>Не нужно делать такие заборчики, ведь любому клиенту явно это будет бросаться в глаза;</li>
+            <li>И запомните, что <i>внутренние отступы - всегда меньше внешних</i>. На данном примере это относится к отзывам.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link" id="site-link-2-1">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №2</b><br>
+            <a href="https://maryget.ru/lp-webinar2" target="_blank">maryget.ru/lp-webinar2</a>
+        </h2>
+
+        <h2 class="shout">Mobile</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-2--img-3">
+        <figure>
+            <img class="cover cover__promo" src="pictures/2/3.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-2--mistake-3">
+        <h2>Ошибки:</h2>
+        <ol>
+            <li>Очень мелкий текст в меню. Название сайта можно убрать, а то контакты начинают обтекать логотип :)</li>
+            <li class="next">Отступы по краям можно уменьшить, чтобы было меньше переносов текста;</li>
+            <li class="next">Текст даты вебинара тоже рекомендую сделать поменьше.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-2--mistake-4">
+        <h2 class="shout">Хаотичные отступы:</h2>
+    </section>
+
+    <section class="slide" id="site-link-2--img-4">
+        <figure>
+            <img class="cover cover__promo" src="pictures/2/4.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="mistakes-02">
+        <h2>Список ошибок:</h2>
+        <ol>
+            <li>Размер текста;</li>
+            <li class="next">Хаотичные отступы.</li>
+        </ol>
+    </section>
+
+    <section class="slide  site-link" id="site-link-3">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №3</b><br>
+            <a href="https://rubby.getcourse.ru/lp-kupit_angl" target="_blank">rubby.getcourse.ru/lp-kupit_angl</a>
+        </h2>
+
+        <h2 class="shout">Desctop</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-3--img-1">
+        <figure>
+            <img class="cover cover__promo" src="pictures/3/1.png">
+        </figure>
+
+        <style>
+            #site-link-3--img-1::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-3--mistake-1">
+        <h2>Первые ошибки:</h2>
+        <ol>
+            <li>Маленький размер контактов в шапке;</li>
+            <li class="next">Сливается текст почты и контактов. Такое ощущение, что это один и тот же текст. Можно добавить разделитель - слеш (/), либо перенести номер телефона на новую строку;</li>
+            <li class="next">Немного сливается текст на фоне.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-3--img-2">
+        <figure>
+            <img class="cover cover__promo" src="pictures/3/2.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-3--mistake-2">
+        <h2>Mistakes:</h2>
+        <ol>
+            <li>Нет необходмости разделять заголовок и смысловой к нему блок отдельными фоновыми цветами. Вероятно, что существую такие случаи, но это редко встречается. Главное - сохранить смысл блоков или, как называют “экранов”, чтобы пользователь проще
+                ориентировался по странице;</li>
+            <li class="next">Хаотичные отступы.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-3--img-3">
+        <figure>
+            <img class="cover cover__promo" src="pictures/3/3.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-3--mistake-3">
+        <h2>Блок - <br>Изучение английского языка для детей:</h2>
+        <ol>
+            <li>Хаотичные отступы;</li>
+            <li class="next">
+                Текст на таком ярком фоне выглядит голым, можно добавить рамки и фоновый цвет;
+            </li>
+            <li class="next">Также, можно добавить иконки списку.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-3--img-4">
+        <figure>
+            <img class="cover cover__promo" src="pictures/3/4.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-3--mistake-4">
+        <h2>Подвал сайта.</h2>
+        <ol>
+            <li>Низкая читабельность у ссылок;</li>
+            <li class="next">
+                Можно заменить цвет ссылок на цвет из цветовой палитры.
+            </li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link" id="site-link-3-1">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №3</b><br>
+            <a href="https://rubby.getcourse.ru/lp-kupit_angl" target="_blank">rubby.getcourse.ru/lp-kupit_angl</a>
+        </h2>
+
+        <h2 class="shout">Mobile</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-3--img-5">
+        <figure>
+            <img class="cover cover__promo" src="pictures/3/5.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-3--mistake-5">
+        <h2>Первый экран и меню.</h2>
+        <ol>
+            <li>Логотип можно убрать;</li>
+            <li class="next">Уменьшить отступы у контейнера с текстом;</li>
+            <li class="next">Поправить констраст цветов, можно усилить тень или добавить тень тексту.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-1--mistake-6">
+        <h2 class="shout">Хаотичные отступы:</h2>
+    </section>
+
+    <section class="slide" id="site-link-3--img-6">
+        <figure>
+            <img class="cover cover__promo" src="pictures/3/6.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-3--img-7">
+        <figure>
+            <img class="cover cover__promo" src="pictures/3/7.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-3--img-8">
+        <figure>
+            <img class="cover cover__promo" src="pictures/3/8.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="mistakes-03">
+        <h2>Список ошибок:</h2>
+        <ol>
+            <li>Размер текста;</li>
+            <li class="next">Сливаются контакты в меню;</li>
+            <li class="next">Сливается текст на обложке;</li>
+            <li class="next">Лишнее разделение заголовка от смыслового блока;</li>
+            <li class="next">Хаотичные отступы;</li>
+            <li class="next">Низкая читабельность у ссылок.</li>
+        </ol>
+    </section>
+
+    <section class="slide  site-link" id="site-link-4">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №4</b><br>
+            <a href="https://donna77.ru/lp-tarotschool_copy" target="_blank">donna77.ru/lp-tarotschool_copy</a>
+        </h2>
+
+        <h2 class="shout">Desctop</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-4--img-1">
+        <figure>
+            <img class="cover cover__promo" src="pictures/4/1.png">
+        </figure>
+
+        <style>
+            #site-link-4--img-1::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-4--mistake-1">
+        <h2>Меню</h2>
+        <ol>
+            <li>Можно увеличить высоту меню;</li>
+            <li class="next">И чуть-чуть увеличить размер контактов.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-4--img-2">
+        <figure>
+            <img class="cover cover__promo" src="pictures/4/2.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-4--mistake-2">
+        <h2>Дубликат</h2>
+        <ol>
+            <li>Вероятнее всего 2 блок под мобильную версию и его забыли скрыть на десктопе.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-4--img-3">
+        <figure>
+            <img class="cover cover__promo" src="pictures/4/3.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-4--img-4">
+        <figure>
+            <img class="cover cover__promo" src="pictures/4/4.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-4--mistake-3">
+        <h2>Отступы</h2>
+        <ol>
+            <li>Хаотичные отступы.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-4--img-5">
+        <figure>
+            <img class="cover cover__promo" src="pictures/4/5.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-4--mistake-4">
+        <h2>Ошибки:</h2>
+        <ol>
+            <li>Выдленные блоки кажутся голыми, нужно их разнообразить;</li>
+            <li class="next">Так как автор у нас один, то можно воспользоваться блоком 2 колонки;</li>
+            <li class="next">Если авторов много, то данный блок уместен;</li>
+            <li class="next">Блок “Сертификат”. Сейчас это просто текст, тут нужно продемонстрировать, что у вас крутой продукт и крутой сертификат. Вам нужно убедить человека, что ваш сертификат не просто бумажка или набор пикселей. Добавьте картинки, декоративные элементы.
+            </li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link" id="site-link-4-1">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №4</b><br>
+            <a href="https://donna77.ru/lp-tarotschool_copy" target="_blank">donna77.ru/lp-tarotschool_copy</a>
+        </h2>
+
+        <h2 class="shout">Mobile</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-4--img-6">
+        <figure>
+            <img class="cover cover__promo" src="pictures/4/6.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-4--mistake-5">
+        <h2>Рекомендации:</h2>
+        <ol>
+            <li>Можно увеличить размер даты вебинара.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-4--img-7">
+        <figure>
+            <img class="cover cover__promo" src="pictures/4/7.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-4--mistake-6">
+        <h2>Ошибка:</h2>
+        <ol>
+            <li>Хаотичные отступы.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-4--img-8">
+        <figure>
+            <img class="cover cover__promo" src="pictures/4/8.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-4--mistake-7">
+        <h2>Ошибка:</h2>
+        <ol>
+            <li>Слишком большой размер текста, лучше его уменьшить.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="mistakes-04">
+        <h2>Список ошибок:</h2>
+        <ol>
+            <li>Размер текста;</li>
+            <li class="next">Дубликат блока;</li>
+            <li class="next">Хаотичные отступы.</li>
+        </ol>
+    </section>
+
+    <section class="slide  site-link" id="site-link-5">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №5</b><br>
+            <a href="https://profit1.getcourse.ru/DPR_copy" target="_blank">profit1.getcourse.ru/DPR_copy</a>
+        </h2>
+
+        <h2 class="shout">Desctop</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-5--img-1">
+        <figure>
+            <img class="cover cover__promo" src="pictures/5/1.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-5--mistake-1">
+        <h2>Обложка</h2>
+        <ol>
+            <li>Отсутствует “Уникальное торговое предложение”, проще говоря обложка с заголовком, которая говорит о вашем предложении одной фразой.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-5--img-2">
+        <figure>
+            <img class="cover cover__promo" src="pictures/5/2.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-5--mistake-2">
+        <h2>Отступы</h2>
+        <ol>
+            <li>Хаотичные отступы по всей странице.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-5--img-3">
+        <figure>
+            <img class="cover cover__promo" src="pictures/5/3.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-5--img-4">
+        <figure>
+            <img class="cover cover__promo" src="pictures/5/4.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-5--mistake-3">
+        <h2>Палитра цветов</h2>
+        <ol>
+            <li>Я не увидел какого-то единого стиля у лендинга, если я не прав, то просто пришлите мне пример выбранной палитры :)</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-5--img-5">
+        <figure>
+            <img class="cover cover__promo" src="pictures/5/5.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-5--mistake-4">
+        <h2>Поп-ап</h2>
+        <ol>
+            <li>Форма очень мелкая на десктопе, можно увелчить размер контейнера и размеры шрифтов.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="mistakes-05">
+        <h2>Список ошибок:</h2>
+        <ol>
+            <li>Нет обложки;</li>
+            <li class="next">Хаотичные отступы;</li>
+            <li class="next">Отсутствие единого стиля (нет палитры);</li>
+            <li class="next">Маленький размер формы на десктопе.</li>
+        </ol>
+    </section>
+
+    <section class="slide  site-link" id="site-link-6">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №6</b><br>
+            <a href="https://dinatest.getcourse.ru/foto_copy" target="_blank">https://dinatest.getcourse.ru/foto_copy</a>
+        </h2>
+
+        <h2 class="shout">Desctop</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-6--img-1">
+        <figure>
+            <img class="cover cover__promo" src="pictures/6/1.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-6--img-2">
+        <figure>
+            <img class="cover cover__promo" src="pictures/6/2.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-6--mistake-1">
+        <h2>Отступы в обложке</h2>
+        <ol>
+            <li>Очень большие отступы в обложке, приходится много скролить до контента.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-6--img-3">
+        <figure>
+            <img class="cover cover__promo" src="pictures/6/3.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-6--mistake-2">
+        <h2>Рекомендации:</h2>
+        <ol>
+            <li>Примеры наших работ - это заголовок, нужно его выделить;</li>
+            <li class="next">Также, нужно добавить отступ;</li>
+            <li class="next">Плитки можно увеличить (можно начать с увеличения контейнера).</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link" id="site-link-6-1">
+        <h2>
+            <b style="margin-bottom: 10px;">Сова №6</b><br>
+            <a href="https://dinatest.getcourse.ru/foto_copy" target="_blank">https://dinatest.getcourse.ru/foto_copy</a>
+        </h2>
+
+        <h2 class="shout">Mobile</h2>
+
+        <style>
+            .site-link .shout a {
+                font-size: 50px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-6--img-4">
+        <figure>
+            <img class="cover cover__promo" src="pictures/6/4.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="site-link-6--mistake-3">
+        <h2>Отступы</h2>
+        <ol>
+            <li>Слишком большой отступ;</li>
+            <li class="next">Также, полоска, которая разделяет заголовок от списка отзывов, прилипла к списку.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-6--img-5">
+        <figure>
+            <img class="cover cover__promo" src="pictures/6/5.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="mistakes-06">
+        <h2>Ошибки:</h2>
+        <ol>
+            <li>Отступы;</li>
+            <li class="next">Выделение заголовка.</li>
+        </ol>
+    </section>
+
+    <section class="slide" id="mistakes-title">
+        <h2 class="shout grow">Список ошибок</h2>
+
+        <figure>
+            <img class="cover cover__promo" src="pictures/mistakes.jpg">
+        </figure>
+        <style>
+            #mistakes-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #mistakes-title h2 {
+                margin: 0 0 0;
+                color: white;
+                text-align: center;
+                font-size: 120px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #mistakes-title p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #mistakes-title p a {
+                color: white;
+            }
+            
+            #mistakes-title img.cover__promo {
+                filter: brightness(0.8);
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="mistakes">
+        <h2>Ошибки, которые мы рассмотрели:</h2>
+        <ol>
+            <li>Размер текста;</li>
+            <li class="next">Горизонтальная прокрутка;</li>
+            <li class="next">Контраст цветов и затемнение обложки;</li>
+            <li class="next">Несоблюдение единых отступов;</li>
+            <li class="next">Добавление анимации на крупные блоки;</li>
+            <li class="next">Разделение заголовка от смыслового блока;</li>
+            <li class="next">Большое количество пустого места;</li>
+            <li class="next">Низкая читабельность текста;</li>
+            <li class="next">Отсутствие акцента на важных блоках, это и к формам относится;</li>
+            <li class="next">Несоблюдение цветовой палитры.</li>
+        </ol>
+
+        <style>
+            #mistakes ol {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="repeat-title">
+        <h2 class="shout grow">А давайте устраним пробелы?</h2>
+
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat.png">
+        </figure>
+        <style>
+            #repeat-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #repeat-title h2 {
+                margin: 0 0 0;
+                color: white;
+                text-align: center;
+                font-size: 80px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #repeat-title p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+                text-shadow: 0 0 10px black;
+            }
+            
+            #repeat-title p a {
+                color: white;
+            }
+            
+            #repeat-title img.cover__promo {
+                filter: brightness(0.9);
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="repeat">
+        <h2>Повторим и заполним пробелы:</h2>
+        <ol>
+            <li>Как один блок показать на Desctop, а второй для Mobile?</li>
+            <li class="next">Где править отступы у блоков?</li>
+            <li class="next">Где править отступы у элементов?</li>
+            <li class="next">Где поменять цвет текста / ссылок?</li>
+            <li class="next">Где изменять тень блока?</li>
+            <li class="next">Как регулировать размер всплывающего окна?</li>
+            <li class="next">Как изменить размер текста в контактах?</li>
+            <li class="next">Как убрать горизонтальную прокрутку при использовании библиотеки?</li>
+            <li class="next">Как изменить размер текста в слайдере (отзывы)?</li>
+            <li class="next">Принцип DRY</li>
+        </ol>
+
+        <style>
+            #repeat li {
+                font-size: 19px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="repeat-item-1">
+        <h2>Как один блок показать на Desctop,<br>а второй для Mobile?</h2>
+        <ol>
+            <li>Дублируем блок;</li>
+            <li class="next">Ставим 1 блоку настройку видимости - "Показать от 760px" (DESCTOP);</li>
+            <li class="next">Ставим 2 блоку настройку видимости - "Показать до 760px" (MOBILE);</li>
+            <li class="next">Вносим свои изменения в мобильную версию.</li>
+        </ol>
+
+        <p class="next" style="color:#999">А теперь давайте я это продемонстрирую.</p>
+    </section>
+
+    <section class="slide" id="repeat-item-2">
+        <h2>Где править отступы у блоков?</h2>
+        <ol>
+            <li>Переходим в "Стиль блока";</li>
+            <li class="next">Находим параметры "Отступ сверху" и "Отступ снизу";</li>
+            <li class="next">Заменяем на нужные значения;</li>
+            <li class="next">Находим полосу, её ещё называют range-slider, distance-slider;</li>
+            <li class="next">Регулируем кубиками нужные нам отступы слева и справа;</li>
+            <li class="next">Когда все действия выполнены, нужно сохранить настройку стиля.</li>
+        </ol>
+
+        <p class="next" style="color:#999">А теперь давайте я это продемонстрирую.</p>
+    </section>
+
+    <section class="slide" id="repeat-item-3">
+        <h2>Где править отступы у элементов?</h2>
+        <ol>
+            <li>Наводим на элемент;</li>
+            <li class="next">Находим шестерёнку и нажимаем на неё;</li>
+            <li class="next">Находим параметры "Отступ сверху" и "Отступ снизу";</li>
+            <li class="next">Заменяем на нужные значения;</li>
+            <li class="next">Сохраняем.</li>
+        </ol>
+
+        <p class="next" style="color:#999">А теперь давайте я это продемонстрирую.</p>
+    </section>
+
+    <section class="slide" id="repeat-item-4">
+        <h2>Где поменять цвет текста / ссылок?</h2>
+        <ol>
+            <li>
+                Массовый вариант.
                 <ul>
-                    <li>Or mix their types</li>
-                    <li>But do not go too far</li>
-                    <li>Otherwise audience will be bored</li>
+                    <li class="next">Заходим в стили блока;</li>
+                    <li class="next">Находим "Цвет фона блока, Цвет текста блока, Цвет ссылок блока";</li>
+                    <li class="next">Заменяем значения и сохраняем.</li>
                 </ul>
             </li>
-            <li>Look, seven rows exactly!</li>
+            <li class="next">
+                Точечный вариант. Бывает, что не все цвета текста поменялись или же нужно дать цвет определённому элементу.
+                <ul>
+                    <li class="next">Наводим на элемент и кликаем на шестерёнку;</li>
+                    <li class="next">Находим "Цвет текста" и меняем на свой;</li>
+                    <li class="next">Сохраняем изменения.</li>
+                </ul>
+            </li>
         </ol>
-    </section>
 
-    <section class="slide">
-        <h2>Serious citations</h2>
-        <figure>
-            <blockquote>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
-            </blockquote>
-            <figcaption>Marcus Tullius Cicero</figcaption>
-        </figure>
-    </section>
+        <p class="next" style="color:#999">А теперь давайте я это продемонстрирую.</p>
 
-    <section class="slide">
-        <h2>Code samples</h2>
-        <pre>
-            <code>&lt;!DOCTYPE html&gt;</code>
-            <code class="mark">&lt;html lang="en"&gt;</code>
-            <code><mark>&lt;head&gt;</mark> <span class="comment">&lt;!--Comment--&gt;</span></code>
-            <code>    &lt;title&gt;Shower&lt;/title&gt;</code>
-            <code>    &lt;meta charset="<mark class="important">UTF-8</mark>"&gt;</code>
-            <code>    &lt;link rel="stylesheet" href="screen.css"&gt;</code>
-            <code><mark>&lt;/head&gt;</mark></code>
-        </pre>
-    </section>
-
-    <section class="slide">
-        <h2>Even tables</h2>
-        <table>
-        <tr>
-            <th scope="col">Locavore</th>
-            <th>Umami</th>
-            <th>Helvetica</th>
-            <th>Vegan</th>
-        </tr>
-        <tr>
-            <th scope="row">Fingerstache</th>
-            <td>Kale</td>
-            <td>Chips</td>
-            <td>Keytar</td>
-        </tr>
-        <tr>
-            <th scope="row">Sriracha</th>
-            <td>Gluten-free</td>
-            <td>Ennui</td>
-            <td>Keffiyeh</td>
-        </tr>
-        <tr>
-            <th scope="row">Thundercats</th>
-            <td>Jean</td>
-            <td>Shorts</td>
-            <td>Biodiesel</td>
-        </tr>
-        <tr>
-            <th scope="row">Terry</th>
-            <td>Richardson</td>
-            <td>Swag</td>
-            <td>Blog</td>
-        </tr>
-        </table>
-        <p>It’s good to have information organized.</p>
-    </section>
-
-    <section class="slide" id="picture">
-        <h2>Pictures</h2>
-        <figure>
-            <img class="cover" src="pictures/picture.jpg" alt="Orange typewriter on a wooden table close-up">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
-        </figure>
         <style>
-            #picture h2 {
-                color: white;
+            #repeat-item-4 li {
+                font-size: 18px;
             }
         </style>
     </section>
 
-    <section class="slide">
-        <h2 class="shout shrink">You can even shout this way</h2>
+    <section class="slide" id="repeat-item-5">
+        <h2>Где изменять тень блока?</h2>
+        <ol>
+            <li>Добавляем блоку "Обложку", если нет;</li>
+            <li class="next">Переходим в "Обложка";</li>
+            <li class="next">Находим "Непрозрачность";</li>
+            <li class="next">Вносим изменения и сохраняем.</li>
+        </ol>
+
+        <p class="next" style="color:#999">А теперь давайте я это продемонстрирую.</p>
     </section>
 
-    <section class="slide">
-        <h2>Inner navigation</h2>
+    <section class="slide" id="repeat-item-6">
+        <h2>Как регулировать размер всплывающего окна?</h2>
         <ol>
-            <li>Lets you reveal list items one by one</li>
-            <li class="next">To keep some key points</li>
-            <li class="next">In secret from audience</li>
-            <li class="next">But it will work only once</li>
-            <li class="next">Nobody wants to see the same joke twice</li>
+            <li>Заходим в "Стиль" всплывающего окна;</li>
+            <li class="next">Скролим в самый низ и находим "Ширина всплывающего блока";</li>
+            <li class="next">Добавляем цифрами нужную ширину, обычно я пишу 1000px;</li>
+            <li class="next">Отступы поправить можно там же, как и цвет, фон и т.д. <br><i>Ведь большинство блоков имеет одинаковые настройки!</i></li>
+            <li class="next">Сохраняем.</li>
+        </ol>
+
+        <p class="next" style="color:#999">А теперь давайте я это продемонстрирую.</p>
+
+        <style>
+            #repeat-item-6 li {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="repeat-item-7">
+        <h2>Маленький размер контактов в шапке.</h2>
+        <ol>
+            <li>Увеличить размер текста;</li>
+            <li class="next">Убедиться, что текст не вываливается, если вываливается за меню, то просто увеличиваем высоту меню;</li>
+            <li class="next">Также убедитесь, что есть отступы у текста сверху и снизу, если их уже не осталось, чуть-чуть можно увеличить размер меню.</li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-1--img-01">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/1.jpg">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-1--img-02">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/2.jpg">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--code" id="site-link-1--code-1">
+        <h2>Было:</h2>
+        <pre>
+            <code>&lt;p&gt;&lt;a href="mailto:info@info.ru"&gt;info@info.ru&lt;/a&gt;&lt;/p&gt;</code>
+            <code>&lt;p&gt;&lt;a href="tel:+79165555555">+7 (916) 555-5555&lt;/a&gt;&lt;/p&gt;</code>
+        </pre>
+
+        <h2>Стало:</h2>
+        <pre>
+            <code class="mark">&lt;p&gt;&lt;a <mark class="important">style="font-size: 16px"</mark> href="mailto:info@info.ru"&gt;info@info.ru&lt;/a&gt;&lt;/p&gt;</code>
+            <code class="mark">&lt;p&gt;&lt;a <mark class="important">style="font-size: 16px"</mark> href="tel:+79165555555">+7 (916) 555-5555&lt;/a&gt;&lt;/p&gt;</code>
+        </pre>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-1--img-03">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/3.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-1--img-04">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/4.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-1--img-05">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/5.jpg">
+        </figure>
+    </section>
+
+    <!-- repeat 8 -->
+
+    <section class="slide  site-link--mistake" id="repeat-item-8">
+        <h2>Горизонтальная прокрутка при использовании библиотеки</h2>
+        <ol>
+            <li>Появилась при использовании класса появления блока с правой стороны;</li>
+            <li class="next">Данную проблему можно поправить, если вы отмените прокрутку у html, body.</li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="site-link-1--code-2">
+        <h2>Отменяем прокрутку у HTML, BODY:</h2>
+        <pre>
+            <code class="mark">html, body {</code>
+            <code class="mark">  overflow-x: hidden !important;</code>
+            <code class="mark">}</code>
+        </pre>
+
+        <p style="color: #999;">Добавляем данный код в блок CSS на вашей странице</p>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="site-link-1--img-06">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/6.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-1--img-07">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/7.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-1--img-08">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/8.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="site-link-1--img-09">
+        <figure>
+            <img class="cover cover__promo" src="pictures/1/9.png">
+        </figure>
+    </section>
+
+    <!-- repeat 9 -->
+
+    <!-- steps 1 -->
+
+    <section class="slide  site-link--mistake" id="repeat-item-9">
+        <h2>Как изменить размер текста в слайдере?</h2>
+        <ol>
+            <li>Для начала находим селектор;</li>
+            <li class="next">Убеждаемся, что находимся там, где нужно;</li>
+            <li class="next">Локально меняем размеры;</li>
+            <li class="next">Переносим код в блок;</li>
+            <li class="next">Так как мы будем использовать CSS, то дублировать слайдер для адаптивности не нужно, предусмотрим это в коде.</li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="repeat-item-9--title-1">
+        <h2 class="shout">Находим селектор</h2>
+    </section>
+
+    <section class="slide" id="repeat-item-9-img-01">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/1.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="repeat-item-9--title-2">
+        <h2 class="shout">Изменяем размер текста</h2>
+    </section>
+
+    <section class="slide" id="repeat-item-9-img-02">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/2.png">
+        </figure>
+
+        <style>
+            #repeat-item-9-img-02::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="repeat-item-9--code-3">
+        <h2>Код с комментариями:</h2>
+        <pre>
+            <code class="mark">/* */ - это обозначение комментариев, браузер не будет их обрабатывать, как код</code>
+            <code class="mark">@media screen and (max-width: 768px) { /* max-width - макисмальный размер экрана */</code>
+            <code class="mark">  .f-description { /* селектор с описанем отзыва */</code>
+            <code class="mark">    font-size: 17px !important; /* размер шрифта */</code>
+            <code class="mark">  }</code>
+            <code class="mark">}</code>
+        </pre>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="repeat-item-9--code-3-1">
+        <h2>В итоге получится такая конструкция:</h2>
+        <pre>
+            <code class="mark">@media screen and (max-width: 768px) { </code>
+            <code class="mark">  .f-description { </code>
+            <code class="mark">    font-size: 17px !important; </code>
+            <code class="mark">  }</code>
+            <code class="mark">}</code>
+        </pre>
+
+        <p style="color: #999;">Добавляем данный код в блок вашего слайдера (раздел "Стиль")</p>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="repeat-item-9-img-03">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc1/1.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-img-04">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc1/2.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-img-05">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc1/3.png">
+        </figure>
+
+        <style>
+            #repeat-item-9-img-05::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <!-- steps 2 -->
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-1">
+        <h2>Как изменить размер заголовка в слайдере?</h2>
+        <ol>
+            <li>Так же, как и у обычного текста;</li>
+            <li class="next">Для начала находим селектор;</li>
+            <li class="next">Убеждаемся, что находимся там, где нужно;</li>
+            <li class="next">Локально меняем размеры;</li>
+            <li class="next">Переносим код в блок;</li>
+            <li class="next">Так как мы будем использовать CSS, то дублировать слайдер для адаптивности не нужно, предусмотрим это в коде.</li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #repeat-item-9-1::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-1--title-3">
+        <h2 class="shout">Находим селектор</h2>
+    </section>
+
+    <section class="slide" id="repeat-item-9-1-img-01">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/3.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-1--title-4">
+        <h2 class="shout">Изменяем размер текста</h2>
+    </section>
+
+    <section class="slide" id="repeat-item-9-1-img-02">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/4.png">
+        </figure>
+
+        <style>
+            #repeat-item-9-1-img-02::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="repeat-item-9-1--code-3">
+        <h2>Код с комментариями:</h2>
+        <pre>
+            <code class="mark">/* */ - это обозначение комментариев, браузер не будет их обрабатывать, как код</code>
+            <code class="mark">@media screen and (max-width: 768px) { /* max-width - макисмальный размер экрана */</code>
+            <code class="mark">  .f-header { /* селектор с заголовком отзыва */</code>
+            <code class="mark">    font-size: 17px !important; /* размер шрифта */</code>
+            <code class="mark">  }</code>
+            <code class="mark">}</code>
+        </pre>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="repeat-item-9-1--code-3-1">
+        <h2>В итоге получится такая конструкция:</h2>
+        <pre>
+            <code class="mark">@media screen and (max-width: 768px) { </code>
+            <code class="mark">  .f-header { </code>
+            <code class="mark">    font-size: 17px !important; </code>
+            <code class="mark">  }</code>
+            <code class="mark">}</code>
+        </pre>
+
+        <p style="color: #999;">Добавляем данный код в блок вашего слайдера (раздел "Стиль")</p>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="repeat-item-9-1-img-03">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc2/1.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-1-img-04">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc2/2.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-1-img-05">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc2/3.png">
+        </figure>
+
+        <style>
+            #repeat-item-9-1-img-05::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <!-- steps 3 -->
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-2">
+        <h2>Как изменить размер "об авторе" в слайдере?</h2>
+        <ol>
+            <li>Так же, как и у предыдущих текстов;</li>
+            <li class="next">Для начала находим селектор;</li>
+            <li class="next">Убеждаемся, что находимся там, где нужно;</li>
+            <li class="next">Локально меняем размеры;</li>
+            <li class="next">Переносим код в блок;</li>
+            <li class="next">Так как мы будем использовать CSS, то дублировать слайдер для адаптивности не нужно, предусмотрим это в коде.</li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #repeat-item-9-2::after {
+                /* left: 20px; */
+            }
+            
+            #repeat-item-9-2 h2 {
+                font-size: 45px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-2--title-5">
+        <h2 class="shout">Находим селектор</h2>
+    </section>
+
+    <section class="slide" id="repeat-item-9-2-img-01">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/5.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-1--title-6">
+        <h2 class="shout">Изменяем размер текста</h2>
+    </section>
+
+    <section class="slide" id="repeat-item-9-2-img-02">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/6.png">
+        </figure>
+
+        <style>
+            #repeat-item-9-2-img-02::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="repeat-item-9-2--code-4">
+        <h2>Код с комментариями:</h2>
+        <pre>
+            <code class="mark">/* */ - это обозначение комментариев, браузер не будет их обрабатывать, как код</code>
+            <code class="mark">@media screen and (max-width: 768px) { /* max-width - макисмальный размер экрана */</code>
+            <code class="mark">  .f-subheader { /* селектор с текстом "об авторе" */</code>
+            <code class="mark">    font-size: 13px !important; /* размер шрифта */</code>
+            <code class="mark">  }</code>
+            <code class="mark">}</code>
+        </pre>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="repeat-item-9-2--code-4-1">
+        <h2>В итоге получится такая конструкция:</h2>
+        <pre>
+            <code class="mark">@media screen and (max-width: 768px) { </code>
+            <code class="mark">  .f-subheader { </code>
+            <code class="mark">    font-size: 13px !important; </code>
+            <code class="mark">  }</code>
+            <code class="mark">}</code>
+        </pre>
+
+        <p style="color: #999;">Добавляем данный код в блок вашего слайдера (раздел "Стиль")</p>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="repeat-item-9-2-img-03">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc3/1.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-2-img-04">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc3/2.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-2-img-05">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc3/3.png">
+        </figure>
+
+        <style>
+            #repeat-item-9-2-img-05::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <!-- steps 4 -->
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-3">
+        <h2>Остался последний пункт, как убрать лишние отступы?</h2>
+        <ol>
+            <li>Логика работы такая же, но уже не размер текста меняем, а отступ снизу;</li>
+            <li class="next">Для начала находим селектор;</li>
+            <li class="next">Убеждаемся, что находимся там, где нужно;</li>
+            <li class="next">Локально изменяе размер;</li>
+            <li class="next">Переносим код в блок;</li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #repeat-item-9-3::after {
+                /* left: 20px; */
+            }
+            
+            #repeat-item-9-3 h2 {
+                font-size: 45px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-3--title-6">
+        <h2 class="shout">Находим селектор</h2>
+    </section>
+
+    <section class="slide" id="repeat-item-9-3-img-01">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/7.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-3--title-7">
+        <h2 class="shout">Изменяем отступы</h2>
+    </section>
+
+    <section class="slide" id="repeat-item-9-3-img-02">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/8.png">
+        </figure>
+
+        <style>
+            #repeat-item-9-3-img-02::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="repeat-item-9-3--code-5">
+        <h2>Код с комментариями:</h2>
+        <pre>
+            <code class="mark">/* */ - это обозначение комментариев, браузер не будет их обрабатывать, как код</code>
+            <code class="mark">@media screen and (max-width: 768px) { /* max-width - макисмальный размер экрана */</code>
+            <code class="mark">  .f-description { /* селектор с описанием отзыва */</code>
+            <code class="mark">    margin-bottom: 0 !important; /* дословно с англ. яз. - нижняя граница */</code>
+            <code class="mark">  }</code>
+            <code class="mark">}</code>
+        </pre>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="repeat-item-9-3--code-5-1">
+        <h2>В итоге получится такая конструкция:</h2>
+        <pre>
+            <code class="mark">@media screen and (max-width: 768px) { </code>
+            <code class="mark">  .f-description { </code>
+            <code class="mark">    margin-bottom: 0 !important; </code>
+            <code class="mark">  }</code>
+            <code class="mark">}</code>
+        </pre>
+
+        <p style="color: #999;">Добавляем данный код в блок вашего слайдера (раздел "Стиль")</p>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="repeat-item-9-3-img-03">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc4/1.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-3-img-04">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc4/2.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-3-img-05">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/gc4/3.png">
+        </figure>
+
+        <style>
+            #repeat-item-9-3-img-05::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <!-- DRY -->
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-4--title-8">
+        <h2 class="shout">DRY (Не повторяйся)</h2>
+    </section>
+
+    <section class="slide  site-link--mistake" id="repeat-item-9-4">
+        <h2>Если обратить внимание на наш код, то мы видим повторяющиеся блоки.</h2>
+        <ol>
+            <li>Старайтесь избегать в коде повторения каких-то блоков кода;</li>
+            <li class="next">
+                В нашем случае нужно:
+                <ul>
+                    <li class="next">Оставить только одно @media выражение;</li>
+                    <li class="next">Перенести весь код в него.</li>
+                </ul>
+            </li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #repeat-item-9-4::after {
+                left: 20px;
+            }
+            
+            #repeat-item-9-4 h2 {
+                font-size: 45px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="repeat-item-9-4-img-01">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/dry/1.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-4-img-02">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/dry/2.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-4-img-03">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/dry/3.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-4-img-04">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/dry/4.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-4-img-05">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/dry/5.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="repeat-item-9-4-img-06">
+        <figure>
+            <img class="cover cover__promo" src="pictures/repeat/dry/6.png">
+        </figure>
+    </section>
+
+
+    <!-- BONUS -->
+
+
+    <section class="slide" id="bonus">
+        <h2 class="shout grow">Бонус!</h2>
+
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus.jpg">
+        </figure>
+        <style>
+            #bonus {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #bonus h2 {
+                margin: 0 0 0;
+                color: white;
+                text-align: center;
+                font-size: 140px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #bonus p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #bonus p a {
+                color: white;
+            }
+            
+            #promo img.cover__promo {
+                filter: brightness(0.8);
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-list">
+        <h2>Бонус!</h2>
+        <ol>
+            <li>Добавление иконки тексту или заголовку с помощью HTML;</li>
+            <li class="next">Стрелочка scroll up на страницу с лендингом;</li>
+            <li class="next">Добавление более функционально подвала на сайт;</li>
+            <li class="next">Больше анимаций! - добавление новой библиотеки;</li>
+            <li class="next">Точечное добавление анимации элементу или блоку (Revealator-Anim).</li>
         </ol>
     </section>
 
-    <section class="slide" id="see-more">
-        <h2 class="shout">
-            <img src="pictures/logo.svg" alt="Shower logo">
-            <a href="https://github.com/shower/shower">See more on GitHub</a>
-        </h2>
-        <style>
-            #see-more h2 {
-                font-size: 100px
-            }
+    <!-- ITEM - 1 -->
 
-            #see-more img {
-                width: 0.72em;
-                height: 0.72em;
+    <section class="slide  site-link--mistake" id="bonus-item-1">
+        <h2>Добавление иконки тексту или заголовку с помощью HTML, этапы:</h2>
+        <ol>
+            <li>Зайти на сайт <a href="https://www.flaticon.com/" target="_blank">flaticon.com</a>;</li>
+            <li class="next">Скачать нужную иконку;</li>
+            <li class="next">Загрузить её в файловое хранилище GetCourse;</li>
+            <li class="next">Скопировать ссылку на иконку;</li>
+            <li class="next">Выбираем нужный текст и заходим в HTML этого элемента;</li>
+            <li class="next">Пишем HTML конструкцию c добавлением иконки;</li>
+            <li class="next">Правим в случае необходимости;</li>
+            <li class="next">Сохраняем.</li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-1::after {
+                left: 20px;
+            }
+            
+            #bonus-item-1 h2 {
+                font-size: 30px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-1-code-1">
+        <h2>Код с комментариями:</h2>
+        <pre>
+            <code>img - тег, который говорит, что будет добавлено изображение</code>
+            <code>src - путь до картинки</code>
+            <code>width - ширина картинки</code>
+            <code>height - высота картинки</code>
+            <code>alt - указывать его, хороший тон, это описание изображения</code>
+            <code class="mark">Конструкция - &lt;img <mark class="important">src=""</mark>  <mark class="important">width=""</mark>  <mark class="important">height=""</mark> alt=""&gt;</code>
+        </pre>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-1-code-2">
+        <h2>Финальный код:</h2>
+        <pre>
+            <code class="mark">&lt;img src="путь до картинки" width="32" height="32"&gt;</code>
+        </pre>
+
+        <p style="color: #999">А теперь, давайте посмотрим на весь процесс визуально!</p>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-01">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/1.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-02">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/2.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-03">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/3.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-04">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/4.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-05">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/5.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-06">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/6.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-07">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/7.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-08">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/8.png">
+        </figure>
+
+        <style>
+            #bonus-item-1-img-08::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-09">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/9.png">
+        </figure>
+
+        <style>
+            #bonus-item-1-img-09::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-10">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/10.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-11">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/11.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-12">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/12.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-13">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/13.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-14">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/14.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-15">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/15.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="bonus-item-1-1">
+        <h2>Отступы</h2>
+        <ol>
+            <li>Обратите внимание, что картинка не идеально расположена по центру 1 строки заголовка;</li>
+            <li class="next">
+                Как это поправить?
+                <ul>
+                    <li class="next">Добавить отступ в HTML</li>
+                    <!-- <li class="next">Перенести весь код в заголовок</li> -->
+                </ul>
+            </li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-1-code-3">
+        <h2>Код с комментариями:</h2>
+        <pre>
+            <code>style - аттрибут добавления CSS в HTML</code>
+            <code>margin-top - отступ от верхней границы</code>
+            <code>margin-bottom - отступ от нижней границы</code>
+            <code>margin-left - отступ от левой границы</code>
+            <code>margin-right - отступ от правой границы</code>
+            <code>/* Конструкция: */</code>
+            <code class="mark">&lt;img <mark class="important">style=""</mark> src="путь до картинки" width="32" height="32"&gt;</code>
+        </pre>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-1-code-4">
+        <h2>Финальный код:</h2>
+        <pre>
+            <code class="mark">&lt;img <mark class="important">style="margin-top: -6px"</mark> src="путь до картинки" width="32" height="32"&gt;</code>
+        </pre>
+
+        <p style="color: #999">А теперь, давайте посмотрим на весь процесс визуально!</p>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-16">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/16.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-17">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/17.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-18">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/18.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-19">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/19.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-20">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/20.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-21">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/21.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-22">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/22.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="bonus-item-1-2">
+        <h2>Представьте!</h2>
+        <ol>
+            <li>Вы написали много стилей к картинке и случайно её удалили, вот тогда что делать? :)</li>
+            <li class="next">
+                Как же вернуть все стили?
+                <ul>
+                    <li class="next">Никак.</li>
+                </ul>
+            </li>
+            <li class="next">
+                Но не расстраивайтесь, все стили можно записать в свой CSS класс и просто добавлять его картинке.
+                <ul>
+                    <li class="next">Придумываем название класса;</li>
+                    <li class="next">Описываем все стили в нём;</li>
+                    <li class="next">Добавляем его нашей картинке.</li>
+                </ul>
+            </li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим, как это можно реализовать.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-1-code-5">
+        <h2>Код с комментариями:</h2>
+        <pre>
+            <code>class - аттрибут присвоения CSS класса элементу</code>
+            <code class="mark">&lt;img src="путь до картинки" width="32" height="32" <mark class="important">class=""</mark> &gt;</code>
+        </pre>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-1-code-6">
+        <h2>Финальный код:</h2>
+        <pre>
+            <code class="mark">&lt;img src="путь до картинки" width="32" height="32" <mark class="important">class="icon-dollar-01"</mark>&gt;</code>
+        </pre>
+
+        <p style="color: #999">А теперь, давайте посмотрим на весь процесс визуально!</p>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/23.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/24.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/25.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/26.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/27.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/28.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/29.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/30.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/31.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/32.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/33.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/34.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-1-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/1/35.png">
+        </figure>
+    </section>
+
+    <!-- ITEM - 2 -->
+
+    <section class="slide  site-link--mistake" id="bonus-item-2">
+        <h2>Стрелочка scroll up на страницу с лендингом, этапы:</h2>
+        <ol>
+            <li>Добавить HTML блок с кодом кнопки;</li>
+            <li class="next">Добавить CSS в данный блок, чтобы выглядела интереснее;</li>
+            <li class="next">Добавить JavaScript, который будет отвечать за логику перемещения кнопки вверх.</li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим на код для такой реализации.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-2::after {
+                left: 20px;
+            }
+            
+            #bonus-item-2 h2 {
+                font-size: 40px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-1">
+        <h2>HTML код с комментариями:</h2>
+        <pre>
+            <code>button - тег объявления кнопки</code>
+            <code>id - идентификатор, по которому будем искать кнопку</code>
+            <code>Конструкция:</code>
+            <code>&lt;button  <mark class="important">id=""</mark> &gt;Вверх!&lt;/button&gt;</code>
+        </pre>
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-2">
+        <h2>Финальный HTML код:</h2>
+        <pre>
+            <code>&lt;button id="scroll-top-arrow-button"&gt;Вверх!&lt;/button&gt;</code>
+        </pre>
+
+        <!-- <p style="color: #999">А теперь, давайте посмотрим на весь процесс визуально!</p> -->
+
+        <style>
+            .site-link--code pre mark {
+                z-index: 1;
+            }
+            
+            .site-link--code pre code {
+                font-size: 18px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-3">
+        <h2>/* CSS код кнопки с комментариями: */</h2>
+        <pre>
+            <code>#scroll-top-arrow-button { /* наш идентификатор с моим названием для кнопки */</code>
+            <code>  display: inline-block;</code>
+            <code>  background-color: #FF9800; /* цвет фона */</code>
+            <code>  width: 50px; /* ширина */</code>
+            <code>  height: 50px; /* высота */</code>
+            <code>  text-align: center; /* центруем весь текст внутри, ведь иконка по факту текст */</code>
+            <code>  border-radius: 4px; /* скругляем */</code>
+            <code>  margin: 0; /* убираем все отступы */</code>
+            <code>  position: fixed; /* фиксируем, чтобы она была видна всегда на экране */</code>
+            <code>  bottom: 15px; /* снизу от экрана отступ 15px */</code>
+            <code>  right: 90px; /* справа от экрана 90px */</code>
+            <code>  transition: background-color .3s; /* плавный переход, который нужен при наведении и т.д. */</code>
+            <code>  z-index: 1000; /* установим, чтобы она была выше по слою */</code>
+            <code>  border: none; /* убираем рамки */</code>
+            <code>  font-size: 0; /* установим размер 0, чтобы не было основного текста, иконку добавим дальше */</code>
+            <code>}</code>
+        </pre>
+
+        <style>
+            #bonus-item-2-code-3 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-2-code-3 pre code {
+                font-size: 11px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-4">
+        <h2>/* CSS код кнопки при наведении с комментариями: */</h2>
+        <pre>
+            <code>#scroll-top-arrow-button:hover { /* наш идентификатор + :hover(наведение на кнопку) */</code>
+            <code>  cursor: pointer; /* поменяем на курсор с указательным пальцем */</code>
+            <code>  background-color: #333; /* поменяем цвет */</code>
+            <code>}</code>
+        </pre>
+
+        <style>
+            #bonus-item-2-code-4 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-2-code-4 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-2-code-4 pre code {
+                font-size: 16px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-5">
+        <h2>/* CSS код кнопки при нажатии с комментариями: */</h2>
+        <pre>
+            <code>#scroll-top-arrow-button:active { /* наш идентификатор + :active(нажатие на кнопку) */</code>
+            <code>  background-color: #555; /* поменяем цвет */</code>
+            <code>}</code>
+        </pre>
+
+        <style>
+            #bonus-item-2-code-5 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-2-code-5 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-2-code-5 pre code {
+                font-size: 16px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-6">
+        <h2>/* CSS код иконки, которую добавим в кнопку с комментариями: */</h2>
+        <pre>
+            <code>#scroll-top-arrow-button::after { /* наш идентификатор + ::after(псевдоэлемент с иконкой) */</code>
+            <code>  content: "\f077"; /* добавляем иконку */</code>
+            <code>  font-family: FontAwesome;  /* установим иконочный шрифт */</code>
+            <code>  font-weight: normal;  /* сбросим жирность */</code>
+            <code>  font-style: normal;  /* сбросим начертания */</code>
+            <code>  font-size: 28px;  /* добавим размер */</code>
+            <code>  line-height: 50px;  /* добавим высоту строки */</code>
+            <code>  color: #fff;  /* установим цвет */</code>
+            <code>}</code>
+        </pre>
+
+        <style>
+            #bonus-item-2-code-6 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-2-code-6 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-2-code-6 pre code {
+                font-size: 16px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-7">
+        <h2>/* Финальный CSS код кнопки: */</h2>
+        <pre>
+            <code>#scroll-top-arrow-button {</code>
+            <code>  display: inline-block;</code>
+            <code>  background-color: #FF9800;</code>
+            <code>  width: 50px;</code>
+            <code>  height: 50px;</code>
+            <code>  text-align: center;</code>
+            <code>  border-radius: 4px;/</code>
+            <code>  margin: 0;</code>
+            <code>  position: fixed;</code>
+            <code>  bottom: 15px;</code>
+            <code>  right: 90px;</code>
+            <code>  transition: background-color .3s;</code>
+            <code>  z-index: 1000;</code>
+            <code>  border: none;</code>
+            <code>  font-size: 0;</code>
+            <code>}</code>
+        </pre>
+
+        <style>
+            #bonus-item-2-code-7 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-2-code-7 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-2-code-7 pre code {
+                font-size: 11px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-8">
+        <h2>/* Финальный CSS код кнопки при наведении: */</h2>
+        <pre>
+            <code>#scroll-top-arrow-button:hover {</code>
+            <code>  cursor: pointer;</code>
+            <code>  background-color: #333;</code>
+            <code>}</code>
+        </pre>
+
+        <style>
+            #bonus-item-2-code-4 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-2-code-8 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-2-code-4 pre code {
+                font-size: 16px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-9">
+        <h2>/* Финальный CSS код кнопки при нажатии: */</h2>
+        <pre>
+            <code>#scroll-top-arrow-button:active {</code>
+            <code>  background-color: #555;</code>
+            <code>}</code>
+        </pre>
+
+        <style>
+            #bonus-item-2-code-5 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-2-code-9 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-2-code-5 pre code {
+                font-size: 16px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-10">
+        <h2>/* Финальный CSS код иконки, которую добавим в кнопку: */</h2>
+        <pre>
+            <code>#scroll-top-arrow-button::after {</code>
+            <code>  content: "\f077";</code>
+            <code>  font-family: FontAwesome;</code>
+            <code>  font-weight: normal;</code>
+            <code>  font-style: normal;</code>
+            <code>  font-size: 28px;</code>
+            <code>  line-height: 50px;</code>
+            <code>  color: #fff;</code>
+            <code>}</code>
+        </pre>
+
+        <style>
+            #bonus-item-2-code-10 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-2-code-10 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-2-code-10 pre code {
+                font-size: 16px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-11">
+        <h2>/* JS логика, которая будет отвечать за перемещение с комментариями: */</h2>
+        <pre>
+            <code>jQuery(document).ready(function() { /* код начнёт работать, когда страница загрузится */</code>
+            <code>  var btn = $('#scroll-top-arrow-button'); /* находим нашу кнопку */</code>
+            <code>  $(window).scroll(function() { /* объявляем, что будет что-то происходить про скроле */</code>
+            <code>    if ($(window).scrollTop() > 300) { /* если проскролили более 300px */</code>
+            <code>      btn.addClass('show'); /* то покажи кнопку */</code>
+            <code>    } else { /* иначе */</code>
+            <code>      btn.removeClass('show'); /* скрой её */</code>
+            <code>    }</code>
+            <code>  });</code>
+            <code>  btn.on('click', function(e) { /* теперь, установим действие при клике на неё */</code>
+            <code>    e.preventDefault(); /* сбросим все возможные действия */</code>
+            <code>    $('html, body').animate({scrollTop:0}, '300'); /* если был клик, то с анимацией скроль вверх (300 - скорость) */</code>
+            <code>  });</code>
+            <code>});</code>
+        </pre>
+
+        <style>
+            #bonus-item-2-code-11 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-2-code-11 pre code {
+                font-size: 12px;
+            }
+            
+            #bonus-item-2-code-11 h2 {
+                font-size: 30px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-2-code-12">
+        <h2>/* Финальная JS логика, которая будет отвечать за перемещение: */</h2>
+        <pre>
+            <code>jQuery(document).ready(function() {</code>
+            <code>  var btn = $('#scroll-top-arrow-button');</code>
+            <code>  $(window).scroll(function() {</code>
+            <code>    if ($(window).scrollTop() > 300) {</code>
+            <code>      btn.addClass('show');</code>
+            <code>    } else {</code>
+            <code>      btn.removeClass('show');</code>
+            <code>    }</code>
+            <code>  });</code>
+            <code>  btn.on('click', function(e) {</code>
+            <code>    e.preventDefault();</code>
+            <code>    $('html, body').animate({scrollTop:0}, '300');</code>
+            <code>  });</code>
+            <code>});</code>
+        </pre>
+
+        <p style="color: #999">А теперь, посмотрим на это визуально.</p>
+
+        <style>
+            #bonus-item-2-code-12 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-2-code-12 pre code {
+                font-size: 11px;
+            }
+            
+            #bonus-item-2-code-12 h2 {
+                font-size: 30px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-1">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/1.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-2">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/2.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-3">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/3.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-4">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/4.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-5">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/5.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-6">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/6.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-7">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/7.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-8">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/8.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-9">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/9.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-10">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/10.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-2-img-11">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/2/11.gif">
+        </figure>
+    </section>
+
+    <!-- ITEM 3 -->
+
+    <section class="slide  site-link--mistake" id="bonus-item-3">
+        <h2>Добавление более функционально подвала на сайт:</h2>
+        <ol>
+            <li>Добавить HTML блок;</li>
+            <li class="next">Добавить CSS в данный блок;</li>
+            <li class="next">Изменить данные и стилизовать подвал конструктором.</li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим на код для такой реализации.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-3::after {
+                left: 20px;
+            }
+            
+            #bonus-item-3 h2 {
+                font-size: 35px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="bonus-item-3-1">
+        <h2>Давайе начнём пользоваться редактором кода?</h2>
+        <ol>
+            <li>Скачаем простенький редактор <a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a>;</li>
+            <li class="next">Установим</li>
+            <li class="next">И теперь весь код будем открывать только там :)</li>
+        </ol>
+        <p class="next">А теперь давайте посмотрим на весь процесс скачивания и публикации подвала.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-3::after {
+                left: 20px;
+            }
+            
+            #bonus-item-3-1 h2 {
+                font-size: 35px;
+            }
+            
+            #bonus-item-3-1 p {
+                font-size: 20px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-1">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/1.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-2">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/2.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-3">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/3.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-4">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/4.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-5">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/5.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-6">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/6.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-7">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/7.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-8">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/8.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-9">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/9.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-10">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/10.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-11">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/11.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-12">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/12.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-13">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/13.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-14">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/14.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-15">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/15.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-16">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/16.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-17">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/17.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-18">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/18.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-19">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/19.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-20">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/20.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-21">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/21.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-22">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/22.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-23">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/23.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-24">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/24.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-25">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/25.png">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-3-img-26">
+        <figure>
+            <img class="cover cover__promo" src="pictures/bonus/3/26.png">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="bonus-item-3-2">
+        <h2>Примечания:</h2>
+        <ol>
+            <li>Если у вас подвал сделан отдельным компонентом, то нужно добавлять подвал там, удалив старый;</li>
+            <li class="next">Подвал, который я вам показал - адаптивный и дублировать для адаптивности не нужно:)</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-3::after {
+                left: 20px;
+            }
+            
+            #bonus-item-3-1 h2 {
+                font-size: 35px;
+            }
+        </style>
+    </section>
+
+    <!-- ITEM 4 -->
+
+    <section class="slide  site-link--mistake" id="bonus-item-4">
+        <h2>Больше анимаций! - добавление новой библиотеки</h2>
+        <ol>
+            <li>Загружаем библиотеку в файловое хранилище;</li>
+            <li class="next">Добавляем библиотеку в шапку сайта;</li>
+            <li class="next">Добавляем JS и указываем, каким элементам хотим установить.</li>
+        </ol>
+
+        <p class="next" style="color: #999999">А теперь давайте посмотрим, как это работает на примере.</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-4::after {
+                /* left: 20px; */
+            }
+            
+            #bonus-item-4 h2 {
+                font-size: 35px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-4-img-1">
+        <figure>
+            <img src="pictures/bonus/4/1.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-2">
+        <figure>
+            <img src="pictures/bonus/4/2.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-3">
+        <figure>
+            <img src="pictures/bonus/4/3.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-4">
+        <figure>
+            <img src="pictures/bonus/4/4.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-5">
+        <figure>
+            <img src="pictures/bonus/4/5.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-6">
+        <figure>
+            <img src="pictures/bonus/4/6.png" alt="" class="cover cover-promo">
+        </figure>
+
+        <style>
+            #bonus-item-4-img-6::after {
+                left: 20px;
+            }
+        </style>
+    </section>
+    <section class="slide" id="bonus-item-4-img-7">
+        <figure>
+            <img src="pictures/bonus/4/7.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-8">
+        <figure>
+            <img src="pictures/bonus/4/8.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-9">
+        <figure>
+            <img src="pictures/bonus/4/9.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-10">
+        <figure>
+            <img src="pictures/bonus/4/10.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-11">
+        <figure>
+            <img src="pictures/bonus/4/11.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-12">
+        <figure>
+            <img src="pictures/bonus/4/12.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-4-code-script">
+        <h2>/* Добавление ссылки на скрипт в HTML */</h2>
+        <pre>
+            <code>Конструкция:</code>
+            <code>&lt;script src="ПУТЬ ДО СКРИПТА (ССЫЛКА)"&gt;&lt;/script&gt;</code>
+        </pre>
+
+        <style>
+            #bonus-item-4-code-script pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-4-code-script h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-4-code-script pre code {
+                font-size: 14px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-4-img-13">
+        <figure>
+            <img src="pictures/bonus/4/13.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-14">
+        <figure>
+            <img src="pictures/bonus/4/14.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-15">
+        <figure>
+            <img src="pictures/bonus/4/15.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-16">
+        <figure>
+            <img src="pictures/bonus/4/16.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-17">
+        <figure>
+            <img src="pictures/bonus/4/17.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-18">
+        <figure>
+            <img src="pictures/bonus/4/18.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-19">
+        <figure>
+            <img src="pictures/bonus/4/19.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-20">
+        <figure>
+            <img src="pictures/bonus/4/20.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-21">
+        <figure>
+            <img src="pictures/bonus/4/21.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-22">
+        <figure>
+            <img src="pictures/bonus/4/22.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-23">
+        <figure>
+            <img src="pictures/bonus/4/23.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-24">
+        <figure>
+            <img src="pictures/bonus/4/24.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-25">
+        <figure>
+            <img src="pictures/bonus/4/25.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-26">
+        <figure>
+            <img src="pictures/bonus/4/26.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-27">
+        <figure>
+            <img src="pictures/bonus/4/27.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-28">
+        <figure>
+            <img src="pictures/bonus/4/28.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-29">
+        <figure>
+            <img src="pictures/bonus/4/29.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-30">
+        <figure>
+            <img src="pictures/bonus/4/30.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-31">
+        <figure>
+            <img src="pictures/bonus/4/31.gif" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-32">
+        <figure>
+            <img src="pictures/bonus/4/32.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-33">
+        <figure>
+            <img src="pictures/bonus/4/33.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-34">
+        <figure>
+            <img src="pictures/bonus/4/34.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-35">
+        <figure>
+            <img src="pictures/bonus/4/35.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+    <section class="slide" id="bonus-item-4-img-36">
+        <figure>
+            <img src="pictures/bonus/4/36.gif" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <!-- ITEM 5 -->
+
+    <section class="slide  site-link--mistake" id="bonus-item-5">
+        <h2>Точечное добавление анимации элементу или блоку (Revealator-Animation)</h2>
+        <ol>
+            <li>В 3 уроке мы уже добавляли данную библиотеку;</li>
+            <li class="next">Теперь решим такие проблему - как добавить анимацию элементам, а не всему блоку?</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-5::after {
+                /* left: 20px; */
+            }
+            
+            #bonus-item-5 h2 {
+                font-size: 35px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="bonus-item-5-1">
+        <h2>Рассмотрим проблему</h2>
+        <ol>
+            <li>Добавим какой-то список;</li>
+            <li class="next">И на весь блок добавим класс revealator-slideright;</li>
+            <li class="next">Далее смотрим на результат.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-5-1::after {
+                /* left: 20px; */
+            }
+            
+            #bonus-item-5-1 h2 {
+                font-size: 35px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-1">
+        <figure>
+            <img src="pictures/bonus/5/1.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-2">
+        <figure>
+            <img src="pictures/bonus/5/2.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-3">
+        <figure>
+            <img src="pictures/bonus/5/3.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-4">
+        <figure>
+            <img src="pictures/bonus/5/4.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-5">
+        <figure>
+            <img src="pictures/bonus/5/5.gif" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="bonus-item-5-2">
+        <h2>Как это исправить с помощью скрипта?</h2>
+        <ol>
+            <li>Рассмотрим скрипт;</li>
+            <li class="next">Рассмотрим нужные участки кода;</li>
+            <li class="next">Удалим ранее добавленный класс;</li>
+            <li class="next">Придумаем и добавим свой класс, по которому будем искать;</li>
+            <li class="next">Добавим JS;</li>
+            <li class="next">Найдём этот список и его элементы;</li>
+            <li class="next">Вызываем функцию с параметрами.</li>
+        </ol>
+
+        <p class="next" style="color: #999999">На самом деле это не так сложно, но давайте я это продемонстрирую :)</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-5-2::after {
+                /* left: 20px; */
+            }
+            
+            #bonus-item-5-2 h2 {
+                font-size: 35px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-6">
+        <figure>
+            <img src="pictures/bonus/5/6.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-7">
+        <figure>
+            <img src="pictures/bonus/5/7.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-8">
+        <figure>
+            <img src="pictures/bonus/5/8.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-9">
+        <figure>
+            <img src="pictures/bonus/5/9.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-5-code-1">
+        <h2>/* Поиск элементов */</h2>
+        <pre>
+            <code> <mark class="important">let</mark> - это объявление переменной</code>
+            <code> <mark class="important">collection01</mark> - название для первой коллекции элементов</code>
+            <code> <mark class="important">document.querySelectorAll()</mark> - поиск всех элементов</code>
+            <code> <mark class="important">(' ')</mark> - в скобочки мы передаём путь к элементам, если классы, то через точку</code>
+            <code>Конструкция:</code>
+            <code> <mark class="important">let</mark>  <mark class="important">collection01</mark> = <mark class="important">document.querySelectorAll</mark><mark class="important">('ПУТЬ К ЭЛЕМЕНТУ ИЛИ ЭЛЕМЕНТАМ')</mark>;</code>
+        </pre>
+
+        <style>
+            #bonus-item-5-code-1 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-5-code-1 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-5-code-1 pre code {
+                font-size: 14px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-5-code-2">
+        <h2>/* Вызов функции */</h2>
+        <pre>
+            <code> <mark class="important">createAnimation</mark> - вызов функции</code>
+            <code> <mark class="important">collection01</mark> - первый параметр, переменная со списком элементов</code>
+            <code> <mark class="important">left</mark> - второй параметр, переменная, в которой хранится класс анимации</code>
+            <code>Конструкция:</code>
+            <code><mark class="important">createAnimation</mark> ( <mark class="important">collection01</mark> , <mark class="important">left</mark>);</code>
+        </pre>
+
+        <style>
+            #bonus-item-5-code-2 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-5-code-2 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-5-code-2 pre code {
+                font-size: 14px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-5-code-3">
+        <h2>/* Поиск элементов без комментариев */</h2>
+        <pre>
+            <code>let collection01 = document.querySelectorAll('ПУТЬ К ЭЛЕМЕНТУ ИЛИ ЭЛЕМЕНТАМ');</code>
+        </pre>
+
+        <style>
+            #bonus-item-5-code-3 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-5-code-3 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-5-code-3 pre code {
+                font-size: 14px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--code" id="bonus-item-5-code-4">
+        <h2>/* Вызов функции без комментариев */</h2>
+        <pre>
+            <code>createAnimation(collection01, left);</code>
+        </pre>
+
+        <style>
+            #bonus-item-5-code-4 pre mark {
+                z-index: 1;
+            }
+            
+            #bonus-item-5-code-4 h2 {
+                font-size: 40px;
+            }
+            
+            #bonus-item-5-code-4 pre code {
+                font-size: 14px;
+            }
+        </style>
+    </section>
+
+    <section class="slide  site-link--mistake" id="bonus-item-5-3">
+        <h2>Что мы уже сделали?</h2>
+        <ol>
+            <li>Рассмотрели скрипт;</li>
+            <li class="next">Рассмотрели нужные участки кода;</li>
+            <li class="next">
+                Осталось:
+                <ul>
+                    <li class="next">Удалить ранее добавленный класс;</li>
+                    <li class="next">Придумать и добавить свой класс, по которому будем искать;</li>
+                    <li class="next">Добавить JS;</li>
+                    <li class="next">Найти созданный список и его элементы;</li>
+                    <li class="next">Вызвать функцию с параметрами.</li>
+                </ul>
+            </li>
+        </ol>
+
+        <p class="next" style="color: #999999">Поехали!</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-5-2::after {
+                /* left: 20px; */
+            }
+            
+            #bonus-item-5-2 h2 {
+                font-size: 35px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-10">
+        <figure>
+            <img src="pictures/bonus/5/10.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-11">
+        <figure>
+            <img src="pictures/bonus/5/11.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-12">
+        <figure>
+            <img src="pictures/bonus/5/12.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-13">
+        <figure>
+            <img src="pictures/bonus/5/13.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-14">
+        <figure>
+            <img src="pictures/bonus/5/14.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-15">
+        <figure>
+            <img src="pictures/bonus/5/15.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-16">
+        <figure>
+            <img src="pictures/bonus/5/16.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-17">
+        <figure>
+            <img src="pictures/bonus/5/17.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-18">
+        <figure>
+            <img src="pictures/bonus/5/18.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-19">
+        <figure>
+            <img src="pictures/bonus/5/19.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-20">
+        <figure>
+            <img src="pictures/bonus/5/20.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-21">
+        <figure>
+            <img src="pictures/bonus/5/21.gif" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-22">
+        <figure>
+            <img src="pictures/bonus/5/22.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-23">
+        <figure>
+            <img src="pictures/bonus/5/23.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-24">
+        <figure>
+            <img src="pictures/bonus/5/24.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-25">
+        <figure>
+            <img src="pictures/bonus/5/25.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-26">
+        <figure>
+            <img src="pictures/bonus/5/26.gif" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="bonus-item-5-4">
+        <h2>Давайте закрепим на сложном примере, как в разборе страниц.</h2>
+        <ol>
+            <li>Добавим точно такой же блок;</li>
+            <li class="next">Сделаем дубликат коллекции элементов в JS;</li>
+            <li class="next">Дублируем вызов функции с новыми параметрами.</li>
+        </ol>
+
+        <p class="next" style="color: #999999">JUST DO IT!</p>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-5-2::after {
+                /* left: 20px; */
+            }
+            
+            #bonus-item-5-2 h2 {
+                font-size: 35px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-27">
+        <figure>
+            <img src="pictures/bonus/5/27.gif" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-28">
+        <figure>
+            <img src="pictures/bonus/5/28.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-29">
+        <figure>
+            <img src="pictures/bonus/5/29.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-30">
+        <figure>
+            <img src="pictures/bonus/5/30.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-31">
+        <figure>
+            <img src="pictures/bonus/5/31.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-32">
+        <figure>
+            <img src="pictures/bonus/5/32.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-33">
+        <figure>
+            <img src="pictures/bonus/5/33.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-34">
+        <figure>
+            <img src="pictures/bonus/5/34.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-35">
+        <figure>
+            <img src="pictures/bonus/5/35.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-36">
+        <figure>
+            <img src="pictures/bonus/5/36.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-37">
+        <figure>
+            <img src="pictures/bonus/5/37.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-38">
+        <figure>
+            <img src="pictures/bonus/5/38.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-39">
+        <figure>
+            <img src="pictures/bonus/5/39.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-40">
+        <figure>
+            <img src="pictures/bonus/5/40.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-41">
+        <figure>
+            <img src="pictures/bonus/5/41.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-42">
+        <figure>
+            <img src="pictures/bonus/5/42.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-43">
+        <figure>
+            <img src="pictures/bonus/5/43.gif" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-44">
+        <figure>
+            <img src="pictures/bonus/5/44.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-45">
+        <figure>
+            <img src="pictures/bonus/5/45.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-46">
+        <figure>
+            <img src="pictures/bonus/5/46.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-47">
+        <figure>
+            <img src="pictures/bonus/5/47.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-48">
+        <figure>
+            <img src="pictures/bonus/5/48.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-49">
+        <figure>
+            <img src="pictures/bonus/5/49.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-50">
+        <figure>
+            <img src="pictures/bonus/5/50.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-51">
+        <figure>
+            <img src="pictures/bonus/5/51.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-52">
+        <figure>
+            <img src="pictures/bonus/5/52.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="bonus-item-5-img-53">
+        <figure>
+            <img src="pictures/bonus/5/53.gif" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide  site-link--mistake" id="bonus-item-5-5">
+        <h2>Примечание:</h2>
+        <ol>
+            <li>JavaScript блок на странице всегда переносите в самый низ.</li>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-3::after {
+                left: 20px;
+            }
+            
+            #bonus-item-3-1 h2 {
+                font-size: 35px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="answer">
+        <h2 class="shout grow ">Ответы на вопросы</h2>
+
+        <figure>
+            <img class="cover cover__promo" src="pictures/answer.jpg">
+        </figure>
+        <style>
+            #answer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #answer h2 {
+                margin: 0 0 0;
+                color: white !important;
+                text-align: center;
+                font-size: 120px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #answer p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #answer p a {
+                color: white;
+            }
+            
+            #answer img.cover__promo {
+                filter: brightness(0.8);
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="answer-1">
+        <h2>Вопрос 1.</h2>
+        <blockquote>
+            <p>Почему-то не работает анимация на мобильных устройствах. Например, кнопка: я ее просто копирую из десктопной версии, где уже настроена анимация и делаю видимость до 760px. В редакторе анимация есть, а на мобильном - нет.</p>
+        </blockquote>
+    </section>
+
+    <section class="slide" id="answer-1-img-1">
+        <figure>
+            <img src="pictures/answers/1.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-2">
+        <figure>
+            <img src="pictures/answers/2.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-3">
+        <figure>
+            <img src="pictures/answers/3.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-4">
+        <figure>
+            <img src="pictures/answers/4.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-2">
+        <h2>Вопрос 2.</h2>
+        <blockquote>
+            <p>Не работает ссылка для почты в шапке сайте. Если смотреть через код, то значение mailto прописано, если выделить текст и нажать на кнопку цепочки, то в поле URL только адрес почты.</p>
+        </blockquote>
+    </section>
+
+    <section class="slide" id="answer-3">
+        <h2>Вопрос 3.</h2>
+        <blockquote>
+            <p>На каком домене делать страницу?</p>
+        </blockquote>
+    </section>
+
+    <section class="slide" id="answer-4">
+        <h2>Вопрос 4.</h2>
+        <blockquote>
+            <p>Добавила библиотеку, прикрепила тему. И когда в блоке вставляю класс, блок становится невидимым. Хотела сделать анимацию кнопки revealator-slideright — появление блока из прозрачности слева. Почему не срабатывает класс и куда смотреть, чтобы
+                исправить ошибку?</p>
+        </blockquote>
+    </section>
+
+    <section class="slide" id="answer-1-img-5">
+        <figure>
+            <img src="pictures/answers/5.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-6">
+        <figure>
+            <img src="pictures/answers/6.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-5">
+        <h2>Вопрос 5.</h2>
+        <blockquote>
+            <p>Как правильно определить класс объекта при просмотре кода элемента, где перечислены сразу несколько классов?</p>
+        </blockquote>
+    </section>
+
+    <section class="slide  site-link--mistake" id="answer-5-1">
+        <h2>Определяем путь:</h2>
+        <ol>
+            <li>Кликаем правой кнопкой мышки по элементу</li>
+            <li class="next">Выбираем просмотр кода элемента</li>
+            <li class="next">Каждый элемент чаще всего содержит класс и порой их бывает несколько</li>
+            <li class="next">Один класс может быть основным, а другие модификаторами, которые просто вносят правки с помощью CSS</li>
+            <li class="next">Выбирать класс, лучше по смыслу, например:
+                <ul>
+                    <li class="next">subheader - говорит, что это конкретный подзаголовок</li>
+                    <li class="next">f-name-lg - говорит, что есть какой-то текст и дай ему большой размер lg</li>
+                </ul>
+            </li>
+
+            <p class="next">Давайте рассмотрим ряд слайдов.</p>
+        </ol>
+
+        <style>
+            .site-link--mistake li {
+                line-height: 1.3;
+                margin-bottom: 10px;
+                font-size: 20px;
+            }
+            
+            .site-link--mistake p {
+                color: #999;
+            }
+            
+            #bonus-item-3::after {
+                left: 20px;
+            }
+            
+            #bonus-item-3-1 h2 {
+                font-size: 35px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="answer-1-img-7">
+        <figure>
+            <img src="pictures/answers/7.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-8">
+        <figure>
+            <img src="pictures/answers/8.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-9">
+        <figure>
+            <img src="pictures/answers/9.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-6">
+        <h2>Вопрос 6.</h2>
+        <blockquote>
+            <p>Можно ли лендинг, сделанный мною, продвигать в интеренте и когда на него будут переходить люди - они же не поймут - на Тильде он, или на какой-либо платформе сделанный. Если домен у него не геткурса, а нормальный домен - то вообще по сути
+                не понятно где его делали.</p>
+        </blockquote>
+    </section>
+
+    <section class="slide" id="answer-7">
+        <h2>Вопрос 7.</h2>
+        <blockquote>
+            <p>Какой лендинг может существовать в интернете как самостоятельный лендинг или он все-таки технически связан с Геткурсом навеки?</p>
+        </blockquote>
+    </section>
+
+    <section class="slide" id="answer-8">
+        <h2>Вопрос 8.</h2>
+        <blockquote>
+            <p>Можно ли такие лендинги создавать людям и передавать - или их без кабинета Геткурса никак не передать? Пока не поняла это.</p>
+        </blockquote>
+    </section>
+
+    <section class="slide" id="answer-9">
+        <h2>Вопрос 9.</h2>
+        <blockquote>
+            <p>Пока не до конца разобралась, как шаблоны шапки и подвала, которые я добавляю готовыми на страницу отредактировать сразу и под телефон, и под ноутбук.</p>
+        </blockquote>
+    </section>
+
+    <section class="slide" id="answer-1-img-10">
+        <figure>
+            <img src="pictures/answers/10.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-11">
+        <figure>
+            <img src="pictures/answers/11.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-12">
+        <figure>
+            <img src="pictures/answers/12.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-13">
+        <figure>
+            <img src="pictures/answers/13.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-14">
+        <figure>
+            <img src="pictures/answers/14.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-15">
+        <figure>
+            <img src="pictures/answers/15.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-16">
+        <figure>
+            <img src="pictures/answers/16.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-17">
+        <figure>
+            <img src="pictures/answers/17.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-18">
+        <figure>
+            <img src="pictures/answers/18.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-19">
+        <figure>
+            <img src="pictures/answers/19.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-20">
+        <figure>
+            <img src="pictures/answers/20.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-21">
+        <figure>
+            <img src="pictures/answers/21.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-22">
+        <figure>
+            <img src="pictures/answers/22.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-23">
+        <figure>
+            <img src="pictures/answers/23.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-24">
+        <figure>
+            <img src="pictures/answers/24.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-25">
+        <figure>
+            <img src="pictures/answers/25.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-26">
+        <figure>
+            <img src="pictures/answers/26.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-27">
+        <figure>
+            <img src="pictures/answers/27.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-28">
+        <figure>
+            <img src="pictures/answers/28.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-29">
+        <figure>
+            <img src="pictures/answers/29.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-10">
+        <h2>Вопрос 10.</h2>
+        <blockquote>
+            <p>Вижу часто рекламу про "продающие " лендинги, но ведь это по-сути просто страница с блоками. Действительно ли существуют продающие лендинги, и если да, то почему у одних они срабатывают, а у других нет?</p>
+        </blockquote>
+    </section>
+
+    <section class="slide" id="answer-1-img-30">
+        <figure>
+            <img src="pictures/answers/30.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-31">
+        <figure>
+            <img src="pictures/answers/31.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-32">
+        <figure>
+            <img src="pictures/answers/32.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-33">
+        <figure>
+            <img src="pictures/answers/33.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-34">
+        <figure>
+            <img src="pictures/answers/34.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-35">
+        <figure>
+            <img src="pictures/answers/35.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-36">
+        <figure>
+            <img src="pictures/answers/36.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-37">
+        <figure>
+            <img src="pictures/answers/37.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-38">
+        <figure>
+            <img src="pictures/answers/38.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-39">
+        <figure>
+            <img src="pictures/answers/39.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-1-img-40">
+        <figure>
+            <img src="pictures/answers/40.png" alt="" class="cover cover-promo">
+        </figure>
+    </section>
+
+    <section class="slide" id="answer-11">
+        <h2>Вопрос 11.</h2>
+        <blockquote>
+            <p>Как прилепить стрелку вверх? То есть после прокрутки страницы вниз, юзер мог бы нажимая на нее автоматом подняться в начало лендинга.</p>
+        </blockquote>
+
+        <a href="#bonus-item-2">Клик!</a>
+    </section>
+
+    <section class="slide" id="results">
+        <h2 class="shout">Подведём итоги:</h2>
+
+        <figure>
+            <img class="cover cover__promo" src="pictures/results.jpg">
+        </figure>
+        <style>
+            #results {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #results h2 {
+                margin: 0 0 0;
+                color: white;
+                text-align: center;
+                font-size: 140px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #results p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #results p a {
+                color: white;
+            }
+            
+            #results img.cover__promo {
+                filter: brightness(0.8);
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="results-list">
+        <h2>Итоги:</h2>
+        <ol>
+            <li>Разборали типовые ошибки на страницах</li>
+            <li class="next">Повторили и заполнили пробелы предыдущих уроков</li>
+            <li class="next">Посмотрели, как можно поправить ошибки</li>
+            <li class="next">Поработали с кодом</li>
+            <li class="next">Ответили на вопросы</li>
+            <li class="next">Увидели забавные сайты некоторых банков</li>
+            <li class="next">И познакмились со вставками трилогии "Хоббит"</li>
+        </ol>
+
+        <style>
+            #results-list li {
+                font-size: 17px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="end">
+        <h2 class="shout grow">У меня всё!</h2>
+
+        <figure>
+            <img class="cover cover__promo" src="pictures/end.jpg">
+        </figure>
+        <style>
+            #end {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #end h2 {
+                margin: 0 0 0;
+                color: white;
+                text-align: center;
+                font-size: 140px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #end p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #end p a {
+                color: white;
+            }
+            
+            #end img.cover__promo {
+                filter: brightness(0.8);
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="dop">
+        <h2 class="shout grow">Или нет? :)</h2>
+
+        <figure>
+            <img class="cover cover__promo" src="pictures/dop.jpg">
+        </figure>
+        <style>
+            #dop {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #dop h2 {
+                margin: 0 0 0;
+                color: white;
+                text-align: center;
+                font-size: 140px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #dop p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #dop p a {
+                color: white;
+            }
+            
+            #dop img.cover__promo {
+                filter: brightness(0.8);
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="dop-list">
+        <h2>Дополнительные материалы:</h2>
+        <ol>
+            <li><a href="https://fs.getcourse.ru/fileservice/file/download/a/11874/sc/345/h/6b1e8ced9cf3fbb319794c1ecd33742d.zip" target="_blank">Скачать архив</a> - "Добавление иконки тексту или заголовку с помощью HTML"</li>
+            <li><a href="https://fs.getcourse.ru/fileservice/file/download/a/11874/sc/231/h/fe220aa0454868df7bbdf070c73414af.zip" target="_blank">Скачать архив</a> - "Стрелочка scroll up на страницу с лендингом"</li>
+            <li><a href="https://fs.getcourse.ru/fileservice/file/download/a/11874/sc/150/h/be82b28151e9a41bd541992ab92e3e69.zip" target="_blank">Скачать архив</a> - "Добавление более функционально подвала на сайт"</li>
+            <li><a href="https://fs.getcourse.ru/fileservice/file/download/a/11874/sc/227/h/200217ffd9538517ad6083cd1dccc0ae.zip" target="_blank">Скачать архив</a> - "Больше анимаций! - добавление новой библиотеки"</li>
+            <li><a href="https://fs.getcourse.ru/fileservice/file/download/a/11874/sc/359/h/e2e18d84e63ff3db52b8d9189ea5ddf6.zip" target="_blank">Скачать архив</a> - "Точечное добавление анимации элементу или блоку"</li>
+            <li><a href="https://www.sublimetext.com/" target="_blank">Sublime Text</a> - Лёгкий редактор кода</li>
+            <li><a href="https://www.flaticon.com/" target="_blank">FlatIcon</a> - Ресурс с иконками</li>
+            <li><a href="https://fontawesome.com/cheatsheet?from=io" target="_blank">Font Awesome</a> - код иконок</li>
+        </ol>
+
+        <p class="next"><mark class="important">Если будут вопросы - пишите :)</mark></p>
+
+        <style>
+            #dop-list li {
+                font-size: 17px;
+            }
+        </style>
+    </section>
+
+    <section class="slide" id="end-01">
+        <h2 class="shout grow">А теперь всё!<br>Пока!</h2>
+
+        <figure>
+            <img class="cover cover__promo" src="pictures/end-01.jpg">
+        </figure>
+        <style>
+            #end-01 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            
+            #end-01 h2 {
+                margin: 0 0 0;
+                color: white;
+                text-align: center;
+                font-size: 140px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #end-01 p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+                text-shadow: 0 0 20px black;
+            }
+            
+            #end-01 p a {
+                color: white;
+            }
+            
+            #end-01 img.cover__promo {
+                filter: brightness(0.8);
             }
         </style>
     </section>
 
     <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+        <a href="https://telegram.me/ivan_main">Написать автору</a>
     </footer>
 
     <div class="progress"></div>
 
     <script src="shower/shower.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
-
 </body>
+
 </html>

@@ -1,0 +1,125 @@
+.policy {
+    margin: 0 auto;
+    display: inline;
+}
+
+.lines {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.footer-container .f-header {
+    text-align: left;
+}
+
+.footer-section {
+    flex: 0 1 245px;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footer-section.section-4 {
+    margin-left: auto;
+    flex: 0 1 274px;
+}
+
+.footer-section.section-5 {
+    flex: 1 1 100%;
+}
+
+.section-5 p {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+@media screen and (max-width:1199px) {
+    .footer-section.section-4 {
+        margin-left: 0;
+        flex: 0 1 245px;
+    }
+    .footer-container {
+        justify-content: center;
+    }
+    .footer-section {
+        flex: 0 1 200px;
+        font-size: 90%;
+        margin: 10px auto;
+    }
+}
+
+@media screen and (max-width:719px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .footer-section {
+        flex-basis: auto;
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:554px) {
+    .footer-section.section-4 {
+        margin: 10px auto;
+    }
+    .footer-section.section-4 .f-header,
+    .footer-section.section-4 ul {
+        text-align: center;
+    }
+}
+
+.social {
+    display: inline-block;
+    height: 21px;
+    width: 21px;
+    padding: 1px;
+    margin-top: 1px;
+    margin-left: 5px;
+}
+
+
+/* ИКОНКИ */
+
+.vk {
+    background: url('//fs.getcourse.ru/fileservice/file/download/a/11874/sc/294/h/b33e495f3c3ded1ee6c86aa82a48804d.png') no-repeat center top;
+}
+
+.fb {
+    background: url('//fs.getcourse.ru/fileservice/file/download/a/11874/sc/119/h/07ad594a967739d6b3387cba83cc1778.png') no-repeat center top;
+}
+
+.inst {
+    background: url('//fs.getcourse.ru/fileservice/file/download/a/11874/sc/198/h/266e7a90189ffe40450f228adf66bc0d.png') no-repeat center top;
+}
+
+.tlgm {
+    background: url('//fs.getcourse.ru/fileservice/file/download/a/11874/sc/245/h/168f8823e3bd66b2afc9e180d1af49a2.png') no-repeat center top;
+}
+
+.youtube {
+    background: url('//fs.getcourse.ru/fileservice/file/download/a/11874/sc/284/h/9ea22bda87c573a530dd7c12856aafa7.png') no-repeat center top;
+}
+
+.vk:hover,
+.fb:hover,
+.inst:hover,
+.tlgm:hover,
+.youtube:hover {
+    background-position: center bottom;
+}
